@@ -136,14 +136,6 @@ button:before {
   border-radius: 100px;
 }
 
-.backdrop {
-  position: absolute;
-  inset: var(--cut);
-  background: var(--bg);
-  border-radius: 100px;
-  transition: background var(--transition);
-}
-
 @keyframes rotate {
   to {
     transform: rotate(90deg);
