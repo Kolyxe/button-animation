@@ -1,4 +1,9 @@
-button-sparkle-1 {
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+}
+
+button {
   --cut: 0.1em;
   --active: 0;
   --bg: radial-gradient(
@@ -34,7 +39,7 @@ button-sparkle-1 {
   scale: calc(1 + (var(--active) * 0.1));
 }
 
-button-sparkle-1:active {
+button:active {
   scale: 1;
 }
 
@@ -52,7 +57,7 @@ svg {
   transition: fill var(--transition), stroke var(--transition);
 }
 
-button-sparkle-1:is(:hover, :focus-visible) path {
+button:is(:hover, :focus-visible) path {
   animation-name: bounce;
 }
 
