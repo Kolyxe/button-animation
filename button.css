@@ -52,7 +52,7 @@ svg {
   transition: fill var(--transition), stroke var(--transition);
 }
 
-button-sparkle:is(:hover, :focus-visible) path {
+button-sparkle-1:is(:hover, :focus-visible) path {
   animation-name: bounce;
 }
 
@@ -234,7 +234,7 @@ button-sparkle-1:is(:hover, :focus-visible) {
   transition: background var(--transition);
 }
 
-button-sparkle-1 svg {
+button svg {
   inline-size: 1.25em;
   translate: -25% -5%;
 }
