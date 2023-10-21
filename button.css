@@ -26,7 +26,6 @@ button {
   display: flex;
   align-items: center;
   gap: 0.25em;
-  width: 100px
   white-space: nowrap;
   border-radius: 50px;
   position: relative;
@@ -37,7 +36,7 @@ button {
     0 -0.05em 0 0 hsl(260 calc(var(--active) * 97%) calc(var(--active) * 60%)) inset;
   transition: box-shadow var(--transition), scale var(--transition),
     background var(--transition);
-  scale: calc(1 + (var(--active) * 0.1));
+  scale: calc(0.5 + (var(--active) * 0.1));
 }
 
 button:active {
