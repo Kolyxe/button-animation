@@ -3,7 +3,7 @@
   --spark: 1.8s;
 }
 
-button {
+button-sparkle {
   --cut: 0.1em;
   --active: 0;
   --bg: radial-gradient(
@@ -39,7 +39,7 @@ button {
   scale: calc(1 + (var(--active) * 0.1));
 }
 
-button:active {
+button-sparkle:active {
   scale: 1;
 }
 
@@ -57,7 +57,7 @@ svg {
   transition: fill var(--transition), stroke var(--transition);
 }
 
-button:is(:hover, :focus-visible) path {
+button-sparkle:is(:hover, :focus-visible) path {
   animation-name: bounce;
 }
 
@@ -85,7 +85,7 @@ button:is(:hover, :focus-visible) path {
   --base: 30%;
 }
 
-button:before {
+button-sparkle:before {
   content: "";
   position: absolute;
   inset: -0.25em;
@@ -150,17 +150,17 @@ button:before {
   }
 }
 
-button:hover .text {
+button-sparkle:hover .text {
   color: white;
 }
 
-button:hover .sparkle path {
+button-sparkle:hover .sparkle path {
   fill: white;
   stroke: white;
 }
 
 @supports (selector(:has(:is(+ *)))) {
-  body:has(button:is(:hover, :focus-visible)) {
+  body:has(button-sparkle:is(:hover, :focus-visible)) {
     --active: 1;
     --play-state: running;
   }
@@ -169,12 +169,12 @@ button:hover .sparkle path {
   }
 }
 
-button:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
+button-sparkle:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
   --active: 1;
   --play-state: runnin;
 }
 
-button:is(:hover, :focus-visible) {
+button-sparkle:is(:hover, :focus-visible) {
   --active: 1;
   --play-state: running;
 }
@@ -239,7 +239,7 @@ button:is(:hover, :focus-visible) {
   transition: background var(--transition);
 }
 
-button svg {
+button-sparkle svg {
   inline-size: 1.25em;
   translate: -25% -5%;
 }
