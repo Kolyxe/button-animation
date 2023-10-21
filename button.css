@@ -145,7 +145,7 @@ button:before {
   }
 }
 
-button-sparkle-1:hover .text {
+button:hover .text {
   color: white;
 }
 
