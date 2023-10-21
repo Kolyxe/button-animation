@@ -23,7 +23,7 @@ button {
     ),
     hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%));
   background: var(--bg);
-  font-size: 0.1rem;
+  font-size: 10rem;
   font-weight: 500;
   border: 0;
   cursor: pointer;
