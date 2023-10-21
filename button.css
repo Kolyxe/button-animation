@@ -26,6 +26,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.25em;
+  width: 100px
   white-space: nowrap;
   border-radius: 50px;
   position: relative;
