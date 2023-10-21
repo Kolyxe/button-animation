@@ -149,13 +149,13 @@ button:hover .text {
   color: white;
 }
 
-button-sparkle-1:hover .sparkle path {
+button:hover .sparkle path {
   fill: white;
   stroke: white;
 }
 
 @supports (selector(:has(:is(+ *)))) {
-  body:has(button-sparkle-1:is(:hover, :focus-visible)) {
+  body:has(button:is(:hover, :focus-visible)) {
     --active: 1;
     --play-state: running;
   }
